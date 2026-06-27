@@ -21,8 +21,8 @@
   --grey-mid:     #6B6B6B;
   --grey-light:   #A0998E;
 
-  --font-display: 'Space Grotesk', Verdana;
-  --font-body:    'Inter', Verdana;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
   --max-width:    1100px;
 }
 
@@ -398,7 +398,55 @@ ul { list-style: none; }
   height: 1px;
   background: var(--cream-border);
 }
+/* ============================================
+   EDUCATION
+   ============================================ */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
+.edu-entry {
+  background: white;
+  border: 1px solid var(--cream-border);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.edu-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edu-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.edu-period {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--grey-light);
+  white-space: nowrap;
+  background: var(--cream-soft);
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+}
+
+.edu-degree {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--cream);
+}
 /* ============================================
    EXPERIENCE
    ============================================ */
